@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+    <title>B64 encoder</title>
+</head>
+<body>
+    <header>
+        <h1 id="title">Encoder en base64</h1>
+    </header>
+    <main>
+        <div class="inputs">
+            <form>
+                <label for="options">Selecciona una opción:</label>
+                <br>
+                <select name="options" id="options">
+                    <option value="Encode">Codificar</option>
+                    <option value="Decode">Decodificar</option>
+                </select>
+                <br>
+                <br>
+                <label for="string">Ingresa la cadena a codificar/decodificar:</label>
+                <br>
+                <input type="text" name="string" id="string">
+            </form>
+            <br>
+            <button class="btn" onclick="result()" type="submit">Ver resultado</button>
+        </div>
+        <p id="resultado"></p>
+    </main>
+    <script>
+        colors(["#ff0000", "#ff6800", "#ffff00", "#3dff00", "#001cff", "#630290", "#ae00FF"]);
+    </script>    
+</body>
